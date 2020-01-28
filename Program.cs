@@ -15,8 +15,9 @@ namespace Deliverable2_Runowski
                 string input = Console.ReadLine();
 
                 decimal x = decimal.Parse(input);
-
-                if (x >= 98)
+                if(x > 100)
+                    Console.WriteLine("Invalid Grade Entered");
+                else if (x >= 98 )
                     Console.WriteLine("Your Grade is A+");
                 else if (x >= 92)
                     Console.WriteLine("Your Grade is A");
