@@ -8,13 +8,16 @@ namespace Deliverable2_Runowski
     {
         static void Main(string[] args)
         {
+            //Ask User to enter their grade
             Console.WriteLine("Please Enter Your Grade as an Integer: ");
 
             try
             {
+                //set user input to variable string
                 string input = Console.ReadLine();
 
-                decimal x = decimal.Parse(input);
+                //use if else statements to check number in user input
+                decimal x = decimal.Parse(input); //cast variable to decimal
                 if(x > 100)
                     Console.WriteLine("Invalid Grade Entered");
                 else if (x >= 98 )
@@ -47,7 +50,7 @@ namespace Deliverable2_Runowski
 
             catch
             {
-                Console.WriteLine("Please Enter a Number....");
+                Console.WriteLine("Please Enter a Number...."); //error message
                 Console.ReadKey(true);
             }
 
