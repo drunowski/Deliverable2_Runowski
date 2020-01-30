@@ -47,7 +47,7 @@ namespace Deliverable2_Runowski
                 else if (x >= 0)
                     Console.WriteLine("Your Grade is F");
                 else
-                    Console.WriteLine("Negative number is not a valid number."); // if the number is negative, print the following message
+                    Console.WriteLine("A negative number is not a valid number."); // if the number is negative, print the following message
             }
 
             catch
