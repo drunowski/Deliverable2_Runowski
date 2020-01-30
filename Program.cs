@@ -18,9 +18,9 @@ namespace Deliverable2_Runowski
 
                 //use if else statements to check number in user input
                 decimal x = decimal.Parse(input); //cast variable to decimal
-                if(x > 100)
+                if (x > 100) // if number is greater than 100, print that its is invalid
                     Console.WriteLine("Invalid Grade Entered");
-                else if (x >= 98 )
+                else if (x >= 98) // print grade according to users input
                     Console.WriteLine("Your Grade is A+");
                 else if (x >= 92)
                     Console.WriteLine("Your Grade is A");
@@ -44,8 +44,10 @@ namespace Deliverable2_Runowski
                     Console.WriteLine("Your Grade is D");
                 else if (x >= 60)
                     Console.WriteLine("Your Grade is D-");
-                else
+                else if (x >= 0)
                     Console.WriteLine("Your Grade is F");
+                else
+                    Console.WriteLine("Negative number is not a valid number."); // if the number is negative, print the following message
             }
 
             catch
